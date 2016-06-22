@@ -23,7 +23,7 @@ RCT_EXPORT_MODULE(SplashScreen)
     rootView.loadingViewFadeDelay = 0.1;
     rootView.loadingViewFadeDuration = 0.1;
     UIImageView *view = [[UIImageView alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    view.contentMode = UIViewContentModeScaleAspectFit;
+    view.contentMode = UIViewContentModeScaleAspectFill;
     view.image = [UIImage imageNamed:@"splash"];
     
     [[NSNotificationCenter defaultCenter] removeObserver:rootView  name:RCTContentDidAppearNotification object:rootView];
